@@ -1,23 +1,47 @@
 aid: astribot
+
 name: Astribot
-description: 'Astribot is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Astribot is currently listed only as a stub entry in the API Evangelist catalog. Attempts to locate an official website, documentation, or API endpoints for Astribot have not yielded any publicly accessible resources. The only reference found points to a placeholder listing on EquityZen, which returns a 403 status and provides no further details about the company''s operations, products, or technical interfaces. Consequently, no concrete information about Astribot’s services, API offerings, or developer resources is available at this time.'
+
 url: https://raw.githubusercontent.com/api-evangelist/astribot/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/astribot-hosts.yml
+- type: Vendors
+  url: vendors/astribot-vendors.yml
+- type: DomainSecurity
+  url: security/astribot-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/astribot
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
